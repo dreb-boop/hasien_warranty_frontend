@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign Up — Hesien Warranty</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/logo-mark.svg" alt="" />
+        <span class="brand__word">
+          <span class="brand__years">50 Years</span>
+          <img src="assets/logo-wordmark.svg" alt="Hesien" />
+        </span>
+        <span class="brand__rule"></span>
+        <span class="brand__warranty">
+          <img src="assets/warranty-badge.png" alt="" />
+          <span>WARRANTY</span>
+        </span>
+      </a>
+    </header>
+
+    <main class="auth">
+      <h1>Sign Up</h1>
+      <form class="form" action="#" method="post">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="full_name" type="text" placeholder="Enter here" required />
+        </div>
+        <div class="field">
+          <label for="account_type">Enterprise or Individual?</label>
+          <select id="account_type" name="account_type" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="individual">Individual</option>
+            <option value="enterprise">Enterprise</option>
+          </select>
+        </div>
+        <div class="field company">
+          <label for="company">If Enterprise - Company Name</label>
+          <input id="company" name="company_name" type="text" placeholder="Enter here" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="Enter here" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter here" required />
+        </div>
+        <div class="field">
+          <label for="country">Country</label>
+          <input id="country" name="country" type="text" placeholder="Enter here" required />
+        </div>
+        <div class="field field--pw">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter here" required />
+          <svg class="eye" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 3l18 18M10.6 10.6A2 2 0 0012 14a2 2 0 001.4-.6M9.9 5.1A10 10 0 0121 12a10.8 10.8 0 01-2.2 3.3M6.1 6.1A10.8 10.8 0 003 12a10 10 0 0012.9 6.9"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div class="field field--pw">
+          <label for="confirm">Confirm Password</label>
+          <input id="confirm" name="confirm_password" type="password" placeholder="Enter here" required />
+          <svg class="eye" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M3 3l18 18M10.6 10.6A2 2 0 0012 14a2 2 0 001.4-.6M9.9 5.1A10 10 0 0121 12a10.8 10.8 0 01-2.2 3.3M6.1 6.1A10.8 10.8 0 003 12a10 10 0 0012.9 6.9"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <p class="form__row">
+          Already a user ? <a class="em" href="login.html">LOGIN</a>
+        </p>
+        <button class="btn btn--center" type="submit">Signup</button>
+        <div class="or"><span>OR</span></div>
+        <p class="social-label">Log in</p>
+        <a class="btn-ghost" href="#">
+          <img src="assets/google.svg" width="24" height="24" alt="" />
+          With Google
+        </a>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__mark" src="assets/footer-watermark.svg" alt="" />
+      <div class="footer__inner">
+        <div class="footer__left">
+          <a class="brand" href="index.html">
+            <img class="brand__mark" src="assets/logo-mark.svg" alt="" />
+            <span class="brand__word">
+              <span class="brand__years">50 Years</span>
+              <img src="assets/logo-wordmark.svg" alt="Hesien" />
+            </span>
+          </a>
+          <div class="footer__contacts">
+            <div>
+              <span>Email</span>
+              <strong>info@hesien.com</strong>
+            </div>
+            <div>
+              <span>Phone Number</span>
+              <strong>+1 231 289 9435</strong>
+            </div>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <a href="signup.html">Signup</a>
+          <a href="login.html">Login</a>
+          <a href="index.html">Home</a>
+          <a href="login.html">Register Warranty</a>
+          <a href="login.html">My Warranties</a>
+          <a href="login.html">Claim Warranty</a>
+          <a href="login.html">My Warranty Claims</a>
+          <a href="#">Warranty Terms &amp; Conditions</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2024 Hesien USA Inc.</p>
+      <div class="footer__bar"></div>
+    </footer>
+  </body>
+</html>
