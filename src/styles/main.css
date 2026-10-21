@@ -298,12 +298,22 @@ img {
 
 .field--pw .eye {
   position: absolute;
-  right: 16px;
-  bottom: 12px;
+  right: 12px;
+  bottom: 8px;
+  width: 32px;
+  height: 32px;
+  color: var(--placeholder);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.field--pw .eye svg {
   width: 24px;
   height: 24px;
-  color: var(--placeholder);
-  pointer-events: none;
 }
 
 .form__row {
@@ -394,7 +404,7 @@ img {
   display: none;
 }
 
-.form:has(select[name="account_type"] option[value="enterprise"]:checked) .company {
+.company.is-open {
   display: flex;
 }
 

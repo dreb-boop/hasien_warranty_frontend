@@ -4,32 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hesien Warranty</title>
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="brand" href="index.html">
-        <img class="brand__mark" src="assets/logo-mark.svg" alt="" />
-        <span class="brand__word">
-          <span class="brand__years">50 Years</span>
-          <img src="assets/logo-wordmark.svg" alt="Hesien" />
-        </span>
-        <span class="brand__rule"></span>
-        <span class="brand__warranty">
-          <img src="assets/warranty-badge.png" alt="" />
-          <span>WARRANTY</span>
-        </span>
-      </a>
-      <div class="header__account">
-        <a class="header__login" href="login.html">LOGIN</a>
-        <a class="header__avatar" href="login.html">
-          <img src="assets/icon-user.png" alt="" />
-        </a>
-      </div>
-    </header>
+    <div id="site-header"></div>
 
     <section class="hero">
-      <img src="assets/hero-41434a.png" alt="" />
+      <img data-hero alt="" />
       <h1>Welcome to Hesien Warranty Website</h1>
     </section>
 
@@ -37,25 +17,25 @@
       <h2>WARRANTY ACTIONS</h2>
       <div class="cards__band">
         <article class="card">
-          <h3><img src="assets/icon-warranty.svg" alt="" /> Register Warranty</h3>
+          <h3><img data-icon="warranty" alt="" /> Register Warranty</h3>
           <p>
             Register your product to activate warranty coverage and receive
             support for repairs or replacements.
           </p>
-          <a class="btn" href="login.html">
+          <a class="btn" href="/login.html">
             Register Warranty
-            <img src="assets/icon-warranty.svg" alt="" />
+            <img data-icon="warranty" alt="" />
           </a>
         </article>
         <article class="card">
-          <h3><img src="assets/icon-warranty.svg" alt="" /> Claim Warranty</h3>
+          <h3><img data-icon="warranty" alt="" /> Claim Warranty</h3>
           <p>
             Submit a warranty claim for eligible repairs or replacements quickly
             and easily.
           </p>
-          <a class="btn" href="login.html">
+          <a class="btn" href="/login.html">
             Claim Warranty
-            <img src="assets/icon-warranty.svg" alt="" />
+            <img data-icon="warranty" alt="" />
           </a>
         </article>
       </div>
@@ -63,62 +43,28 @@
       <h2>WARRANTY RECORDS</h2>
       <div class="cards__row">
         <article class="card">
-          <h3><img src="assets/icon-search.svg" alt="" /> My Warranties</h3>
+          <h3><img data-icon="search" alt="" /> My Warranties</h3>
           <p>
             View and manage your warranties, including validity, coverage
             details, and remaining service period.
           </p>
-          <a class="btn" href="login.html">
+          <a class="btn" href="/login.html">
             My Warranties
-            <img src="assets/icon-warranty.svg" alt="" />
+            <img data-icon="warranty" alt="" />
           </a>
         </article>
         <article class="card">
-          <h3><img src="assets/icon-search.svg" alt="" /> My Warranty Claims</h3>
+          <h3><img data-icon="search" alt="" /> My Warranty Claims</h3>
           <p>Track the status and history of your submitted warranty claims.</p>
-          <a class="btn" href="login.html">
+          <a class="btn" href="/login.html">
             My Warranty Claims
-            <img src="assets/icon-warranty.svg" alt="" />
+            <img data-icon="warranty" alt="" />
           </a>
         </article>
       </div>
     </section>
 
-    <footer class="footer">
-      <img class="footer__mark" src="assets/footer-watermark.svg" alt="" />
-      <div class="footer__inner">
-        <div class="footer__left">
-          <a class="brand" href="index.html">
-            <img class="brand__mark" src="assets/logo-mark.svg" alt="" />
-            <span class="brand__word">
-              <span class="brand__years">50 Years</span>
-              <img src="assets/logo-wordmark.svg" alt="Hesien" />
-            </span>
-          </a>
-          <div class="footer__contacts">
-            <div>
-              <span>Email</span>
-              <strong>info@hesien.com</strong>
-            </div>
-            <div>
-              <span>Phone Number</span>
-              <strong>+1 231 289 9435</strong>
-            </div>
-          </div>
-        </div>
-        <nav class="footer__nav">
-          <a href="signup.html">Signup</a>
-          <a href="login.html">Login</a>
-          <a href="index.html">Home</a>
-          <a href="login.html">Register Warranty</a>
-          <a href="login.html">My Warranties</a>
-          <a href="login.html">Claim Warranty</a>
-          <a href="login.html">My Warranty Claims</a>
-          <a href="#">Warranty Terms &amp; Conditions</a>
-        </nav>
-      </div>
-      <p class="footer__copy">© 2024 Hesien USA Inc.</p>
-      <div class="footer__bar"></div>
-    </footer>
+    <div id="site-footer"></div>
+    <script type="module" src="/src/pages/home.ts"></script>
   </body>
 </html>

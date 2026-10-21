@@ -1,26 +1,33 @@
-# Hesien Warranty — User Portal (static)
+# Hesien Warranty — User Portal
 
-HTML + CSS only. Pages: `index.html` (home), `login.html`, `signup.html`.
+Vite + TypeScript. Pages: home, login, signup.
+
+```
+frontend/
+  index.html
+  login.html
+  signup.html
+  src/
+    assets/
+    components/     header, footer, password toggle
+    pages/          home.ts, login.ts, signup.ts
+    styles/         main.css
+    types/          account.ts
+```
 
 ## Run
 
-**Easiest:** Finder e `index.html` double-click.
-
-Cursor/VS Code: Live Server → Open with Live Server.
-
-Terminal (from this folder):
-
 ```bash
 cd frontend
-npx --yes serve .
+npm install
+npm run dev
 ```
 
-Browser: http://localhost:3000
+Browser: http://localhost:5173
 
-Workspace root theke:
+`index.html` double-click **cholbe na** — Vite lagbe.
 
 ```bash
-npx --yes serve frontend
+npm run build    # dist/
+npm run preview  # built site
 ```
-
-`cd frontend` korar por `serve frontend` chalabo na — oita 404 dibe.
